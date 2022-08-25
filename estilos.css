@@ -1,0 +1,61 @@
+/* esto es el estilo de google fonts*/
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+p{
+font-size: 20px;
+}
+li{
+    list-style: none;
+    margin-right: 25px;
+    
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+   align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+.lista{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 200px;
+}
+h1{
+    font-size: 60px;
+    margin: 0px;
+}
+h2{
+    font-size: 25px;
+    margin-bottom: 40px;/*hace que el margen sea mas ancho por lo que el boton baja, 
+    pero no es que baje si no que el margen es mas ancho */
+}
+a{
+    font-size: 15px;
+    background-color: #5cb8ff;
+    padding: 20px 30px 20px 30px;/*padding top , derecha abajo  izqierda*/
+}
+header{
+    background: url(fondo.jpg);
+    height: 120vh;
+    background-size: cover;
+}
+.contenedor{
+    max-width: 1480px;
+    width: 90%;
+    margin: auto;
+}
