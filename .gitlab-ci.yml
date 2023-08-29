@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+deploy Despliegue Sitio Web:
+        stage: deploy
+        image: 
+              name: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
+        script:
+                - aws s3 sync . s3://$AWS_BUCKET/ --recursive
+                - aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+                - echo "Despliegue exitoso"
